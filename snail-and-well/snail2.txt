@@ -1,0 +1,32 @@
+# Assign problem data to variables with representative names
+# well height,daily advance, night retreat, accumulated distance
+well_height =125
+daily_advance =30
+night_retreat = 20
+
+# Assign 0 to the variable that represents the solution
+days=0
+
+distance=0
+# Write the code that solves the problem
+accumulated_distance=0
+
+accumulated_distance = daily_advance-night_retreat
+day_distance=0
+
+while day_distance < well_height:
+    day_distance = distance+daily_advance
+    distance+=accumulated_distance
+    days+=1
+     
+    print("Distance on day ", days, "before next day", distance, "cm")
+    print(day_distance)
+    if day_distance >= well_height:
+        
+        print("Snail is out when achieving", day_distance, "cm")
+        print("The day for being out", days)
+
+# Print the result with print('Days =', days)
+
+print("Days =", days)
+

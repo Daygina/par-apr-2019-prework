@@ -1,0 +1,45 @@
+
+gan= [10, 11, 13, 30, 22, 11, 10, 33, 22, 22]
+sar= [23, 66, 12, 43, 12, 10, 44, 23, 12, 17]
+
+v_gand = 0
+v_sarum = 0
+
+for i in range(len(gan)):
+      
+        if gan[i]> sar[i]:
+            print("index", i, gan[i], sar[i])
+            v_gand+=1
+            print("Gandalf scored", v_gand)
+        elif sar[i]>gan[i]:
+            print(i, sar[i], i, gan[i])
+            v_sarum+=1
+            print("Saruman scored", v_sarum)
+        else:
+            sar[i] == gan[i]
+            print(i, sar[i], i, gan[i])
+            v_gand+=1
+            v_sarum+=1
+            print("Saruman  and Gandalf score", v_sarum, v_gand) 
+            
+if v_gand>v_sarum:
+    print ("Gandalf won", v_gand, "vs Saruman", v_sarum)
+        
+elif v_sarum>v_gand:
+    print ("Saruman won", v_sarum, "vs Gandalf", v_gand)
+
+else:
+    v_sarum=v_gand
+    print ("Draw", v_sarum, "=", v_gand)
+
+
+
+
+ for index, item in enumerate(L):
+        print index, item
+
+for item_g in gan:
+        print(item_g)
+for item_s in sar:
+        print(item_s)
+        
