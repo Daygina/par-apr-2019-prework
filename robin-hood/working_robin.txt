@@ -1,0 +1,40 @@
+arrows1=0
+arrows2=0
+arrows3=0
+arrows4=0
+sort=sorted(msdp)
+for a in msdp:
+    
+    if a[0]>=0 and a[1]>=0:
+        count = points.count(a)   
+        arrows1+=count
+        index=points.index(a)
+        print(index,"Q1", a, count)
+print("Number of arrows in quadrant1 =", arrows1)
+
+for a in msdp:
+    if a[0]>0 and a[1]<0:
+        count = points.count(a)   
+        arrows2+=count
+        index=points.index(a)
+        print(index, "Q2", a, count)
+print("Number of arrows in quadrant2 =", arrows2)
+
+for a in msdp:
+    if a[0]<0 and a[1]<=0:
+        count = points.count(a)   
+        arrows3+=count
+        index=points.index(a)
+        print(index, "Q3", a, count)
+print("Number of arrows in quadrant3 =", arrows3)
+
+for a in msdp:
+    if a[0]<=0 and a[1]>0:
+        count = points.count(a)   
+        arrows4+=count
+        index=points.index(a)
+        
+        
+        print(index,"Q4", a, count)     
+print("Number of arrows in quadrant4 =", arrows4)
+print(sort)
