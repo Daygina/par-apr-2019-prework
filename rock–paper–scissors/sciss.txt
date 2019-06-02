@@ -1,0 +1,14 @@
+# Create a loop that iterates while no player reaches the minimum of wins      
+while hpoints <= min_wins or mpoints<= min_wins:  
+i,j=accumulation_of_points()
+if i>j:
+    print("Human win", "Score", "h",i,"m",j, sum_points)
+elif i<j:
+    print("Machine wins", "Score", "h",i,"m",j, sum_points)
+else:
+    print("Tie")
+
+  # necessary to win. Inside the loop solves the play of the
+# machine and ask the player's. Compare them and update the value of the variables
+# that accumulate the wins of each participant.
+# Print by console the winner of the game based on who has more accumulated wins
