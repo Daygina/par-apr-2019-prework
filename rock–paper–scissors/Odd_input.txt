@@ -1,0 +1,26 @@
+def number_matches():
+    entry = int(input("Non even number : "))
+    num = entry%2
+    while num == 0:
+        print("Hmmm... you entered even num, while odd number requested: ")
+        entry = int(input("Odd number: "))
+        num = entry%2
+        if num > 0:
+            print(entry)
+    
+    return entry
+def odd():
+    entry = int(input("Please, input non even number : "))
+    num = entry%2
+    if num > 0:
+        return True
+    elif num == 0:
+        return False
+    return entry
+    
+def number_matches():# Assign a variable to the maximum number of games: 1, 3, 5, etc ...
+    n=odd()
+    while n ==False:
+        print("Still need odd number, thank you :")
+        n=odd()
+    return n
